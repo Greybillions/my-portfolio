@@ -1,0 +1,12 @@
+.container {
+  max-width: $website-width;
+ // padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+
+  &-home {
+    margin: 0 auto;
+    max-width: 65rem;
+    padding: 0 4rem;
+  }
+}

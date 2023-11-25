@@ -1,0 +1,177 @@
+@import 'config';
+@import 'utilities';
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: $light-color;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+li {
+  list-style: none;
+}
+
+// Main Nav
+#main-nav {
+  display: flex;
+  background: $secondary-color;
+  justify-content: space-between;
+  text-align: center;
+  padding: 25px 40px 25px 50px;
+  box-shadow: 0 3px rgba(0,0,0,.09);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+
+  h3 {
+    font-size: 1.3rem;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: $dark-color;
+    transition:all 0.2s ease;
+
+    &:hover {
+      color: $main-color;  
+    }
+  }
+}
+
+//Show case 
+.hero {
+  display: flex;
+  background-color: $light-color;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    height: 50rem;
+    justify-content: center;
+    position: relative;
+  }
+
+  &-main {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    position: relative;
+  }
+
+  &-text {
+    h1 {
+      color: $dark-color;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+      
+    img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    p {
+        color: $dark-color;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+
+    span {
+      display: flex;
+      gap: 1.3rem;
+      margin: 1rem 0 2rem 0;
+
+      a {
+        font-size: 1rem;
+        transition: all 0.4s ease-in-out;
+      }
+
+      a:hover {
+        color: $main-color; 
+      }
+    }
+  }
+
+  .hero-img {
+    width: 400px;
+    height: 400px;
+    background-image: $bg-image;
+    background-size: cover;
+    background-position: center;
+    border: $dark-color solid 5px;
+    border-radius: 50%; /* Initial border-radius value */
+    animation: morphAnimation 5s infinite alternate;
+  }
+
+  @keyframes morphAnimation {
+    to {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;/* Final border-radius value */
+    }
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    color: $dark-color;
+    font-size: 1.3rem;
+    left: 0;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem; 
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    ul li img {
+      height: 3rem;
+      padding: 0 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
+
