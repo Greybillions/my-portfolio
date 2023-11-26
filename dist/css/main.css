@@ -97,7 +97,7 @@ li {
     position: relative; }
   .hero-text h1 {
     color: #333;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -126,9 +126,9 @@ li {
     background-size: cover;
     background-position: center;
     border: #333 solid 5px;
-    border-radius: 50%;
+    border-radius: 60% 30% 70% 40%/60% 40% 30% 70%;
     /* Initial border-radius value */
-    animation: morphAnimation 5s infinite alternate; }
+    animation: morphAnimation 8s infinite alternate; }
 
 @keyframes morphAnimation {
   to {
@@ -215,30 +215,6 @@ li {
       overflow: hidden;
       width: 50%;
       position: relative; }
-    #projects .projects-grid .pro-img {
-      background-color: rgba(117, 117, 117, 0.2);
-      border-radius: 1.7rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      height: auto;
-      overflow: hidden;
-      width: 50%;
-      position: relative; }
-    #projects .projects-grid .pro-img {
-      background-color: rgba(117, 117, 117, 0.2);
-      border-radius: 1.7rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      height: auto;
-      overflow: hidden;
-      width: 50%;
-      position: relative; }
-    #projects .projects-grid .pro-img {
-      background-color: rgba(117, 117, 117, 0.2);
-      border-radius: 1.7rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      height: auto;
-      overflow: hidden;
-      width: 50%;
-      position: relative; }
     #projects .projects-grid .pro-img img {
       height: auto;
       width: 100%; }
@@ -304,4 +280,52 @@ li {
 
 #contact {
   background: #fff;
-  height: 300px; }
+  height: 400px; }
+  #contact .contact-content {
+    padding: 4rem 0; }
+    #contact .contact-content .contact-title {
+      padding-bottom: 2rem; }
+      #contact .contact-content .contact-title h3 {
+        font-size: 1.7rem; }
+    #contact .contact-content .contact-icon,
+    #contact .contact-content .contact-div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center; }
+      #contact .contact-content .contact-icon .contact-div,
+      #contact .contact-content .contact-div .contact-div {
+        display: flex; }
+        #contact .contact-content .contact-icon .contact-div a,
+        #contact .contact-content .contact-div .contact-div a {
+          font-size: 1.2rem;
+          font-weight: 600; }
+      #contact .contact-content .contact-icon .circle-icon,
+      #contact .contact-content .contact-div .circle-icon {
+        display: grid;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        #contact .contact-content .contact-icon .circle-icon i,
+        #contact .contact-content .contact-div .circle-icon i {
+          font-size: 2rem;
+          color: #0000FF; }
+
+#footer {
+  background: #333;
+  color: #f9f9f9;
+  height: 100px; }
+  #footer h3 {
+    font-weight: 400; }
+  #footer a {
+    color: #f9f9f9; }
+    #footer a i {
+      font-size: 2rem; }
+  #footer .footer-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; }
