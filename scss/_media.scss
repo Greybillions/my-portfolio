@@ -1,0 +1,211 @@
+// Tablets & Smaller
+@media screen and (max-width: 1200px) {
+    .hero {
+        height: auto;
+
+        .content{
+            height: 45rem;
+        }
+    }
+
+    #about {
+        height: auto;
+
+        .about-content {
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .container {
+        max-width: 60rem;
+    }
+
+    .container-home {
+        padding: 3rem;
+    }
+
+    #main-nav {
+        padding: 2rem; 
+    }
+
+    .hero .hero-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .hero .skills {
+        margin: 0;
+    }
+
+    .hero .content {
+        height: 36rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    #about {
+        height: 95vh;
+
+        .about-content {
+            grid-template-columns: 1fr; 
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            img {
+                height: auto;
+                width: auto;
+            }
+        }
+    }
+
+    #projects {
+        padding: 3rem 0;
+        
+        .pro-text p {
+            font-size: 0.85rem;
+        }
+    }
+
+    #footer .container-home{
+        padding: 0 3rem;
+    }
+}
+
+
+// Smartphones
+@media (max-width: 700px) {
+    .container-home {
+        padding: 0rem 1rem;
+    }
+
+    #main-nav {
+        display: block;
+    }
+
+    #main-nav ul {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+        padding: 8rem 0 0 0;
+
+        .content {
+            flex-direction: column;
+            gap: 3rem;
+            height: auto;
+            text-align: center; 
+        }
+
+        .hero-text span {
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+
+        .skills {
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            bottom: 50px;
+
+            p {
+                border-bottom: 1px solid $dark-color;
+                margin-bottom: 1.5rem;
+            }
+
+            p span {
+                display: none;
+            }
+
+            ul {
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+
+    }
+
+    .hero-main {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        gap: 3rem;
+    }
+
+    #about {
+        padding: 2rem;
+         
+        .about-content img {
+            height: 250px;
+            width: 300px;
+        }
+
+        .text h1 {
+            font-size: 1.4rem;
+
+        }
+
+        .text p {
+            font-size: 1rem;
+        }
+    }
+   
+    #projects {
+        text-align: center;
+
+        .pro {
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 55rem;
+        }
+
+        .pro-img {
+            width: 300px !important;
+            height: 250px !important;
+
+            img {
+                height: 250px !important;
+                width: 300px !important;
+            }
+        }
+    }
+
+    #contact {
+        .contact-content .contact-icon,
+        .contact-content .contact-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 0.3rem;
+        }
+ 
+        .contact-content .contact-div a, .contact-div h3 {
+            font-size: 1rem !important;
+        }
+    }
+
+    #footer {
+
+        margin-top: 1rem;
+        padding: 0;
+
+        .footer-text {
+            padding: 2rem 0 1rem 0;
+        }
+
+        h3, a i {
+            font-size: 1rem;
+        }
+
+    }
+}

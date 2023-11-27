@@ -73,7 +73,7 @@ li {
   display: flex;
   background-color: $light-color;
   flex-direction: column;
-  height: 100vh;
+  height: 700px;
   position: relative;
   width: 100%;
 
@@ -81,7 +81,7 @@ li {
     display: flex;
     align-items: center;
     gap: 10rem;
-    height: 50rem;
+    height: 45rem;
     justify-content: center;
     position: relative;
   }
@@ -222,8 +222,8 @@ li {
   padding: 8rem 0;
 
   .project-content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr;
   }
 
   h3 {
@@ -234,19 +234,21 @@ li {
   .projects-grid {
     display: grid;
     gap: 5rem;
-    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
     height: auto;
     width: 100%;
 
-    .pro {
-      display: flex;
+    .pro { 
       background: $secondary-color;
       border-radius: 1.7rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, .1); 
       display: flex; /* Make it a flex container */
-      flex-direction: row;
-      gap: 5rem;
-      height: 400px;
+      flex-direction: column;
+      justify-content: caneter;
+      align-items: center;
+      gap: 2rem;
+      height: 50rem;
+      width: auto;
       padding: 1.3rem;
     }
 
@@ -254,52 +256,29 @@ li {
       background-color: hsla(0, 0%, 46%, .2);
       border-radius: 1.7rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-      height: auto;
+      height: 400px;
       overflow: hidden;
-      width: 50%;
+      width: 100%;
       position: relative;
     }
 
     .pro-img img {
-      height: auto;
+      height: 400px;
       width: 100%;
-    }
 
-    .pro-img:hover img:first-child {
-      animation: scrollAnimationFirst 5s ease-in-out infinite;
-    }
-
-    .pro-img:hover img:nth-child(2) {
-      animation: scrollAnimationSecond 5s ease-in-out infinite;
-    }
-
-    @keyframes scrollAnimationFirst {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-30%);
+      a {
+        color: $light-color;
       }
     }
 
-    @keyframes scrollAnimationSecond {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-50%);
-      }
-    }
-
- 
+  
     .pro-text {
       display: flex;
       flex-direction: column;
-      height: auto;
       justify-content: center;
       text-align: center;
-      width: 50%;
-      height: 300px;
+      width: auto;
+      height: auto;
 
       h3 {
         align-items: center;
@@ -348,11 +327,7 @@ li {
         padding-left: 1rem;
       }
     }
-  }
-
-  .pro-reverse {
-    flex-direction: row-reverse!important;
-  }
+  } 
 }
 
 // Contact Section
@@ -432,4 +407,5 @@ li {
   }
 }
 
+// Import Media Queries
 @import 'media';
