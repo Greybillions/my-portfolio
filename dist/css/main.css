@@ -298,7 +298,7 @@ li {
         #contact .contact-content .contact-icon .circle-icon i,
         #contact .contact-content .contact-div .circle-icon i {
           font-size: 2rem;
-          color: #0000FF; }
+          color: #333; }
 
 #footer {
   background: #333;
@@ -407,6 +407,10 @@ li {
       font-size: 1rem; }
   #projects {
     text-align: center; }
+    #projects .project-content {
+      margin-top: 8rem; }
+    #projects h3 {
+      font-size: 1.4rem; }
     #projects .pro {
       display: flex;
       flex-direction: column !important;

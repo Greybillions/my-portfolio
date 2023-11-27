@@ -160,6 +160,15 @@
     #projects {
         text-align: center;
 
+        .project-content {
+            margin-top: 8rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+
         .pro {
             display: flex;
             flex-direction: column !important;
